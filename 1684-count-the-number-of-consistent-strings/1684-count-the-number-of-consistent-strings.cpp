@@ -1,15 +1,15 @@
 class Solution {
 public:
     int countConsistentStrings(string allowed, vector<string>& words) {
-        int count=0;
-        for(int i=0;i<words.size();i++){
-            string s=words[i];
-            bool flag=true;
-            for(int j=0;j<s.length();j++){
-               if (allowed.find(s[j]) == std::string::npos) {
-                flag = false;
-                break;
-            }
+        unordered_set<char> s(allowed.begin(), allowed.end());
+        int count = 0;
+        for (const string& x : words) {
+            bool flag = true;
+            for (char c : x) {
+                if (s.find(c) == s.end()) {
+                    flag = false;
+                    break;
+                }
             }
             if(flag){
                 count++;
