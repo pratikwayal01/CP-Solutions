@@ -8,6 +8,10 @@ public:
         for(auto i:nums){
             ans +=to_string(i);
         }
-        return ans[0]=='0' ? "0": ans;
+        if (ans[0] == '0') {
+        return "0";
+    }
+
+    return ans;
     }
 };
