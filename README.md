@@ -23,7 +23,7 @@ This repository is a record of my progress and solutions to the problems I have 
 ## Directory Structure
 (Repo is not sorted yet but after sorting it will look something like this)
 The repository is organized as follows:
-
+```
 ├── Easy
 │ ├── problem1.cpp
 │ ├── problem2.cpp
@@ -37,7 +37,7 @@ The repository is organized as follows:
 │ ├── problem2.cpp
 │ └── ...
 └── README.md
-
+```
 
 Each directory (`Easy`, `Medium`, `Hard`) contains solutions to problems of the corresponding difficulty level. Each file is named according to the problem title or ID on LeetCode.
 
